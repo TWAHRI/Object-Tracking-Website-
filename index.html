@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="ENSI , Hamza Benaissa, Hamdi Twahri , Projet d'été">
+    <meta name="keywords" content="ENSI, Tunisia , La Manouba , Hamza Benaissa, Hamdi Twahri , Projet d'été">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/png" href="images/logo.png" role="logo" />
+  <title>Accueil</title>
+</head>
+
+
+<body data-spy="scroll"
+  data-target=".navbar-default" data-offset="50" background="images/background.jpg" style="background-repeat: no-repeat;background-attachment: fixed; background-size: cover;">
+
+        <div id="preloader">
+            <div id="status"><img src="images/451.gif"> &nbsp;</div>
+        </div>
+
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="550" role="navigation">
+    <div class="container">
+      <div class="navbar-header fixed">
+        <a class="navbar-brand" href="#"><span class="subhead">Suivi d’objet en mouvement sur une vidéo (Object Tracking)</span></a>
+      </div>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          <li><a href="#">Acceil</a></li>
+          <li><a href="Nous.html">Qui somme nous ?</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+    </div><!-- container -->
+  </nav>
+</header>
+
+
+    <div id="myCarousel slider" class="carousel slide wow animated fadeInUp" data-ride="carousel" style="margin-top: 3.9%;">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/img4.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="neon-text wow slideInLeft animated">Suivi d’objet en mouvement sur une vidéo (Tracking)</h1>
+              <h2 class="neon wow slideInRight animated"><img src="images/Matlab_logo.png" style="width: 150px; height: 150px;">MATLAB</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/img1.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="neon-text wow slideInLeft animated">Suivi d’objet en mouvement sur une vidéo (Tracking)</h1>
+              <h2 class="neon wow slideInRight animated"><img src="images/Matlab_logo.png" style="width: 150px; height: 150px;">MATLAB</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/img2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="neon-text wow slideInLeft animated">Suivi d’objet en mouvement sur une vidéo (Tracking)</h1>
+              <h2 class="neon wow slideInRight animated"><img src="images/Matlab_logo.png" style="width: 150px; height: 150px;">MATLAB</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/img3.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="neon-text wow slideInLeft animated">Suivi d’objet en mouvement sur une vidéo (Tracking)</h1>
+              <h2 class="neon wow slideInRight animated"><img src="images/Matlab_logo.png" style="width: 150px; height: 150px;">MATLAB</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+
+
+
+
+<section>
+
+<div class="container">
+  <div class="row">
+    <section class="page col-sm-12">
+
+      <div class="col-sm-4 col-md-4 col-xs-4">
+      <h3 style="color:white; text-shadow: 1px 1px 2px #999; font-family: Fantasy;">Introduction:</h3>
+      <h4 style="color:white; text-shadow: 1px 1px 2px #999;">Le suivi des objets a reçu une attention significative depuis plusieurs années. Avec une vue d'ensemble, c'est un combinaison de traitement d'image par ordinateur, vidéo traitement d'image, reconnaissance de formes, intelligence artificiel et le contrôle des machines. Tous ces éléments sont mis en place pour détecter les objets en mouvement à partir des images obtenues et exécuter le tracking en temps réel, bien que la séquence détaillée de ces sous-opérations peuvent être différenciés pour plusieurs algorithmes.</h4>
+      <h4 style="color:white;text-shadow: 1px 1px 2px #999;">Dans notre projet, la méthode utilisée pour le suivi des objets est l'Algorithme de Mean Shift (type de suivi du noyau).</h4>
+      </div>
+      <div class="col-sm-4 col-md-4 col-xs-4">
+      <h3 style="color:white;text-shadow: 1px 1px 2px #999; font-family: Fantasy;">Algorithme de Mean-shift:</h3>
+      <h4 style="color:white;text-shadow: 1px 1px 2px #999;">Pour chaque point de données, le Mean-shift définit une fenêtre autour de lui et calcule la moyenne des points de données. Ensuite, il déplace le centre de la fenêtre vers le moyen et répète l'algorithme jusqu'à ce qu'il converge.</h4>
+      <h4 style="color:white;text-shadow: 1px 1px 2px #999;">C'est un algorithme itératif non paramétrique ou une estimation de gradient de densité non paramétrique à l'aide d'une approche généralisée du noyau.</h4>
+      <h4 style="color:white;text-shadow: 1px 1px 2px #999;">Ce algorithme est utilisé pour la segmentation d'image, le clustering, le suivi visuel, l'analyse de l'espace & la recherche de mode ect...</h4>
+      </div>
+      <div class="col-sm-4 col-md-4 col-xs-4">
+      <h3 style="color:white;text-shadow: 1px 1px 2px #999; font-family: Fantasy;">Le Mean-shift et le suivi:</h3>
+      <h4 style="color:white;text-shadow: 1px 1px 2px #999;">L'algorithme de Mean-shift peut être utilisé pour le suivi visuel. L'algorithme le plus simple créerait une carte de confiance dans la nouvelle image en fonction de l'histogramme des couleurs de l'objet dans l'image précédente et utiliserait le changement moyen pour trouver le pic d'une carte de confiance près de l'ancienne position de l'objet. La carte de confiance est une fonction de densité de probabilité sur la nouvelle image, en attribuant à chaque pixel de la nouvelle image une probabilité, qui est la probabilité que la couleur de pixel apparaisse dans l'objet dans l'image précédente. Quelques algorithmes, tels que le suivi de l'objet basé sur le noyau, le suivi d'ensemble, CAMshift, développent cette idée.</h4>
+      </div>
+
+
+<figure class="snip1273 col-md-12 col-sm-12 text-center">
+  <img src="images/captures/e1.png" alt="sample72"/>
+  <figcaption>
+  <h3 class="text-center"></h3>
+    <p class="text-center">Tapez "GUI" dans la ligne de commande.<br/> Lors de l'apparition de la GUI, entrez le chemin du video</p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="snip1273 col-md-12 col-sm-12 text-center">
+  <img src="images/captures/e2.png" alt="sample72"/>
+  <figcaption>
+    <h3 class="text-center"></h3>
+    <p class="text-center">Sélectionnez l'objet que vous souhaitez dans la vidéo.<br/> .</p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="snip1273 col-md-12 col-sm-12 text-center">
+  <img src="images/captures/e3.png" alt="sample72"/>
+  <figcaption>
+    <h3 class="text-center"></h3>
+    <p class="text-center">Cliquez sur le boutton "Start" pour traiter la vidéo.</p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="snip1273 col-md-12 col-sm-12 text-center">
+  <img src="images/captures/e4.png" alt="sample72"/>
+  <figcaption>
+    <h3 class="text-center"></h3>
+    <p class="text-center">Cliquez sur le boutton "Play_up" pour afficher le résultat.</p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="snip1273 col-md-12 col-sm-12 text-center">
+  <img src="images/captures/e5.png" alt="sample72"/>
+  <figcaption>
+    <h3 class="text-center"></h3>
+    <p class="text-center">Si l'objet est perdue au cours de la suivi, cette fenêtre apparaîtra.</p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+<figure class="snip1273 col-md-12 col-sm-12 text-center" style="margin-bottom: 10%;">
+  <img src="images/captures/e6.png" alt="sample72"/>
+  <figcaption>
+    <h3 class="text-center"></h3>
+    <p class="text-center">On peut sélectionner plus d'un objet dans une même vidéo.</p>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+</section>
+  </div>
+</div><!-- content container -->
+<style type="text/css">
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+.snip1273 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  margin: 10px 1%;
+  min-width: 1200px -60px;
+  max-width: 1200px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  background-color: #000000;
+  font-size: 16px;
+}
+.snip1273 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+.snip1273 img {
+  position: relative;
+  max-width: 100%;
+  vertical-align: top;
+}
+.snip1273 figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  padding: 20px 30px;
+}
+.snip1273 figcaption:before,
+.snip1273 figcaption:after {
+  width: 1px;
+  height: 0;
+}
+.snip1273 figcaption:before {
+  right: 0;
+  top: 0;
+}
+.snip1273 figcaption:after {
+  left: 0;
+  bottom: 0;
+}
+.snip1273 h3,
+.snip1273 p {
+  line-height: 1.5em;
+}
+.snip1273 h3 {
+  margin: 0 0 5px;
+  font-size: 4em;
+  font-weight: 1000;
+  margin-top: 180px;
+}
+.snip1273 p {
+  font-size: 2em;
+  font-weight: 800;
+  margin: 0 50px 30px;
+}
+.snip1273 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.snip1273:before,
+.snip1273:after,
+.snip1273 figcaption:before,
+.snip1273 figcaption:after {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0.8;
+}
+.snip1273:before,
+.snip1273:after {
+  height: 1px;
+  width: 0%;
+}
+.snip1273:before {
+  top: 0;
+  left: 0;
+}
+.snip1273:after {
+  bottom: 0;
+  right: 0;
+}
+.snip1273:hover img,
+.snip1273.hover img {
+  opacity: 0.4;
+}
+.snip1273:hover figcaption,
+.snip1273.hover figcaption {
+  opacity: 1;
+}
+.snip1273:hover figcaption:before,
+.snip1273.hover figcaption:before,
+.snip1273:hover figcaption:after,
+.snip1273.hover figcaption:after {
+  height: 100%;
+}
+.snip1273:hover:before,
+.snip1273.hover:before,
+.snip1273:hover:after,
+.snip1273.hover:after {
+  width: 100%;
+}
+.snip1273:hover:before,
+.snip1273.hover:before,
+.snip1273:hover:after,
+.snip1273.hover:after,
+.snip1273:hover figcaption:before,
+.snip1273.hover figcaption:before,
+.snip1273:hover figcaption:after,
+.snip1273.hover figcaption:after {
+  opacity: 0.1;
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
+}
+
+</style>
+</section>
+
+
+
+<footer id="footer" class="footer">
+    <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="copyright text-center">
+                  © 2017 <a href="http://www.ensi-uma.tn/" target="_blank">ENSI</a>. Tous droits réservés. Développé par <b style="color: red;">Hamdy Twahry</b> & <b style="color: red;">Hamza Benaissa</b>. </a>
+                </p>
+              </div>
+            </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+
+    <script>
+      var wow = new WOW ({
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       120,          // distance to the element when triggering the animation (default is 0)
+        mobile:       false,       // trigger animations on mobile devices (default is true)
+        live:         true        // act on asynchronously loaded content (default is true)
+      }
+      );
+      wow.init();
+    </script> 
+    <!-- Custom Functions -->
+
+    <script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+    //]]>
+</script>
+<script type="text/javascript">
+    /* Demo purposes only */
+  $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
+</script>
+
+     <script type="text/javascript" src="js/custom.js"></script>
+       <script type="text/javascript" scr="js/wow.min.js" ></script>
+
+    
+</body>
+</html>
